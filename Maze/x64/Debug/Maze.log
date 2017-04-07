@@ -1,0 +1,4 @@
+﻿  OpenGLWidget.cpp
+OpenGLWidget.cpp(281): warning C4838: conversion from 'qreal' to 'float' requires a narrowing conversion
+  Maze.vcxproj -> C:\Users\tom\Desktop\Maze_Skelete\x64\Debug\Maze.exe
+  Maze.vcxproj -> C:\Users\tom\Desktop\Maze_Skelete\x64\Debug\Maze.pdb (Full PDB)
