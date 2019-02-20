@@ -1,13 +1,21 @@
 # ExactVisibilityMaze
 Project 2: Maze Visibility and Rendering Graphics
 
-Implemented a maze rendering program, not too far removed from those used in computer games of the first-person variety. 
+Implemented a maze rendering program with a first person 3D view using only 2D OpenGl commands. 
+Fundamentals used include clipping, ray casting, vector space rendering, etc.
 
 A maze consists of rectangular cells separated by edges. The edges may be either transparent or opaque. The viewer is supposed to see through transparent edges into the neighboring cells, and they should not see through opaque edges. Each edge is assigned a color (which is meaningless for transparent edges).
 
 The maze is described as a 2D structure assumed to lie in the XY plane. To make it 3D, each edge is extruded vertically from the floor to the ceiling. The floor is at z=-1 and the ceiling is at z=1. Each wall should be drawn with its assigned color.
 
 Associated with the maze is a viewer. The viewer has an (x,y,z) location, a viewing direction, and a horizontal field of view. The view direction is measured in degrees of rotation counter-clockwise about the positive z axis. The horizontal field of view is also measured in degrees. For the project, the viewer's z will always be 0.
+
+
+Images:
+![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic1.png)
+![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic2.png)
+![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic3.png)
+
 
 The maze file format consists of the following information:
 	The number of vertices in the maze, nv. Each edge joins two vertices.
@@ -19,8 +27,3 @@ The maze file format consists of the following information:
 	The view data, consisting of the (x, y, z) viewer location, viewing direction and the horizontal field of view.
 
 project information reference from: http://dgmm.csie.ntust.edu.tw/?ac1=courprojdetail_CG2012F_3&id=5b4177749fb7e&sid=5b41788e92cf4
-
-Images:
-![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic1.png)
-![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic2.png)
-![alt text](https://raw.githubusercontent.com/samuel40791765/ExactVisibilityMaze/master/projectimages/pic3.png)
